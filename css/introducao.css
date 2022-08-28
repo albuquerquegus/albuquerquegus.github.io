@@ -1,0 +1,123 @@
+.introducao {
+  display: grid;
+  gap: 100px;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  align-items: center;
+}
+
+/* img {
+  max-width: 360px;
+} */
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  position: relative;
+  margin-bottom: 30px;
+  /* word-break: break-all; */
+}
+
+.introducao h1::before {
+  content: "";
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  top: -20px;
+  left: -40px;
+  position: absolute;
+  z-index: -1;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+  }
+  .introducao h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao img {
+    display: none;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Minhas anotações do Código estão abaixo, acima é o Código do Professor */
+
+/* h1::before {
+  background: #70da1c;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 120px;
+  left: -40px;
+  z-index: -1;
+}
+
+h1::after {
+  background: #ccf235;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  left: -40px;
+  position: absolute;
+  top: 25px;
+  transform: rotate(-45deg);
+  width: 120px;
+  z-index: -1;
+} */
+
+/* @media (max-width: 1000px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introducao h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+  }
+  .introducao h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+} */
